@@ -18,7 +18,6 @@ return new class extends Migration
             $table->date('date_birth');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->enum('permissions', ['admin', 'user']);
             $table->rememberToken();
             $table->timestamps();
         });
